@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+/* font-family: 'Marck Script', cursive;
+font-family: 'Poppins', sans-serif; */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.logo, span{
+    font-family: 'Marck Script', cursive;
+}
+span{
+    color: #881911 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.shop_nav:hover, .nav-link:hover{
+    color: #610d07 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link.active, .shop_nav:active{
+    color: #610d07 !important;
+    font-weight: 400 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes rotate {
+    0% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
 }
 
-.App-link {
-  color: #61dafb;
+.shop_nav:hover img {
+    animation: rotate 0.2s ease;
+    transform-origin: center; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
